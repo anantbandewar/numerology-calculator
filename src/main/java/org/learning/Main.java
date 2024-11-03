@@ -69,7 +69,7 @@ public class Main {
         System.out.println();
         System.out.println("\t NAME: " + name);
         System.out.println("\t Gender: " + (gender=='M' ? "MALE" : "FEMALE"));
-        System.out.println("\t Zodiac Sign -> राशि: " + ZodiacSign.get(birthDate.toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime()));
+        System.out.println("\t Zodiac Sign [राशि]: " + ZodiacSign.get(birthDate.toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime()));
 
 
         String formattedDate = new SimpleDateFormat("E, dd MMMM yyyy").format(birthDate);
